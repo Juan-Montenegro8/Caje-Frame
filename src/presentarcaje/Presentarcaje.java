@@ -3,13 +3,16 @@ import java.util.*;
 public class Presentarcaje {
 
     public static void main(String[] args) {
-        Scanner t=new Scanner (System.in);
-        double sal;
-        System.out.println("ingrese saldo actual");
-        sal=t.nextDouble ();
+        try (Scanner t=new Scanner (System.in)) {
+            System.out.println("ingrese saldo actual");
+            double saldo=t.nextDouble ();
         
-        jose o=new jose(sal);
-        o.setVisible(true);
+            jose o=new jose(saldo);
+            o.setVisible(true);
+
+        } catch (Exception e) {
+            System.err.println("Ocurrio un error "+e.getMessage());
+        }
 
     }
     
