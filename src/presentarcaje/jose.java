@@ -16,22 +16,22 @@ public class jose extends JFrame{
     private JRadioButton jja1;
     private JRadioButton jja;
     
-    double sal;
+    double saldo;
     
     public double getSal() {
-        return sal;
+        return saldo;
     }
 
-    public void setSal(double sal) {
-        this.sal = sal;
+    public void setSal(double saldo) {
+        this.saldo = saldo;
     }
 
-    public jose(double sal) {
+    public jose(double saldo) {
         setBounds(50,50,500,650);
         setTitle ("cajero");
         iniciarcomponentes();
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        this.sal=sal;
+        this.saldo=saldo;
         
     }
     private void iniciarcomponentes(){
@@ -45,7 +45,7 @@ public class jose extends JFrame{
         cEtiqui();
         jj();
         jaj();
-        cBoton2(sal);
+        cBoton2();
     }
     private void cPanel(){
         panel= new JPanel();
@@ -166,7 +166,7 @@ private void cBoton1(){
         boton.addActionListener(oo);
 }
 
-    private void cBoton2(double sal){
+    private void cBoton2(){
         boton=new JButton("mirar sado");  
         boton.setBounds(150, 380, 150, 40);
         boton.setFont(new Font("arial",0,15));
