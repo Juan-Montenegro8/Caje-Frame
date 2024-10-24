@@ -7,8 +7,8 @@ public class Presentarcaje {
             System.out.println("ingrese saldo actual");
             double saldo=t.nextDouble ();
         
-            jose o=new jose(saldo);
-            o.setVisible(true);
+            jose objeto=new jose(saldo);
+            objeto.setVisible(true);
 
         } catch (Exception e) {
             System.err.println("Ocurrio un error "+e.getMessage());
