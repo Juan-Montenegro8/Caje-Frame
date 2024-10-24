@@ -9,12 +9,12 @@ public class jose extends JFrame{
     private JLabel saludo1;
     private JButton boton;
     private JButton boton1;
-    private JTextField tex;
-    private JTextField tex1;
+    private JTextField texto;
+    private JTextField texto1;
     private JPasswordField pss;
     private JPasswordField pss1;
-    private JRadioButton jja1;
-    private JRadioButton jja;
+    private JRadioButton RButon1;
+    private JRadioButton RButon;
     
     double saldo;
     
@@ -59,9 +59,9 @@ public class jose extends JFrame{
         panel.add(eti);
     }
     private void ctexusu(){
-        tex=new JTextField();
-        tex.setBounds(150, 50, 150, 40);
-        panel.add(tex);
+        texto=new JTextField();
+        texto.setBounds(150, 50, 150, 40);
+        panel.add(texto);
         }
     private void cEtiquitacontra(){
         JLabel eti=new JLabel("Contaseña");
@@ -81,13 +81,13 @@ public class jose extends JFrame{
         panel.add(eti);
     }
     private void jj(){
-        jja1= new JRadioButton ("si");
-        jja1.setBounds(150, 220, 40, 40);
-        panel.add(jja1);
+        RButon1= new JRadioButton ("si");
+        RButon1.setBounds(150, 220, 40, 40);
+        panel.add(RButon1);
         
-        jja= new JRadioButton ("no");
-        jja.setBounds(250, 220, 40, 40);
-        panel.add(jja);
+        RButon= new JRadioButton ("no");
+        RButon.setBounds(250, 220, 40, 40);
+        panel.add(RButon);
     }
     private void jaj(){
         boton=new JButton("retiro");  
@@ -97,9 +97,9 @@ public class jose extends JFrame{
         
         ActionListener oo=(ActionEvent ae) -> {
             saludo.setText("ingrese valor a retirar");
-            tex=new JTextField();
-            tex.setBounds(50, 490, 300, 40);
-            panel.add(tex);
+            texto=new JTextField();
+            texto.setBounds(50, 490, 300, 40);
+            panel.add(texto);
             boton1=new JButton("retiro");
             boton1.setBounds(50, 540, 150, 40);
             boton1.setFont(new Font("arial",0,15));
@@ -129,12 +129,12 @@ public class jose extends JFrame{
         ActionListener oo=(ActionEvent ae) -> {
             saludo.setText("valor transferencia");
             saludo1.setText("numero otra cuenta");
-            tex1=new JTextField();
-            tex1.setBounds(50, 490, 150, 40);
-            panel.add(tex1);
-            tex=new JTextField();
-            tex.setBounds(250, 490, 150, 40);
-            panel.add(tex);
+            texto1=new JTextField();
+            texto1.setBounds(50, 490, 150, 40);
+            panel.add(texto1);
+            texto=new JTextField();
+            texto.setBounds(250, 490, 150, 40);
+            panel.add(texto);
             boton1=new JButton("transferir");
             boton1.setBounds(50, 540, 150, 40);
             boton1.setFont(new Font("arial",0,15));
