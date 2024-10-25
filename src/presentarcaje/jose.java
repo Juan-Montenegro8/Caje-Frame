@@ -18,11 +18,11 @@ public class jose extends JFrame{
     
     double saldo;
     
-    public double getSal() {
+    public double getSaldo() {
         return saldo;
     }
 
-    public void setSal(double saldo) {
+    public void setSaldo(double saldo) {
         this.saldo = saldo;
     }
 
@@ -53,10 +53,10 @@ public class jose extends JFrame{
         this.add(panel);
     }
     private void cEtiquitausu(){
-        JLabel eti=new JLabel("Usuario");
-        eti.setBounds(200, 10, 200, 30);
-        eti.setFont(new Font("arial",0,15));
-        panel.add(eti);
+        JLabel etiquetaUsu=new JLabel("Usuario");
+        etiquetaUsu.setBounds(200, 10, 200, 30);
+        etiquetaUsu.setFont(new Font("arial",0,15));
+        panel.add(etiquetaUsu);
     }
     private void ctexusu(){
         texto=new JTextField();
@@ -64,10 +64,10 @@ public class jose extends JFrame{
         panel.add(texto);
         }
     private void cEtiquitacontra(){
-        JLabel eti=new JLabel("Contaseña");
-        eti.setBounds(190, 100, 200, 30);
-        eti.setFont(new Font("arial",0,15));
-        panel.add(eti);
+        JLabel etiquetaContraseña=new JLabel("Contaseña");
+        etiquetaContraseña.setBounds(190, 100, 200, 30);
+        etiquetaContraseña.setFont(new Font("arial",0,15));
+        panel.add(etiquetaContraseña);
     }
     private void ctextcontra(){
         pss=new JPasswordField();
@@ -75,10 +75,10 @@ public class jose extends JFrame{
         panel.add(pss);
         }
     private void cEtiqui(){
-        JLabel eti=new JLabel("desea impimir su recibo");
-        eti.setBounds(145, 200, 200, 30);
-        eti.setFont(new Font("arial",0,15));
-        panel.add(eti);
+        JLabel etiquetaImpresion=new JLabel("Desea impimir su recibo");
+        etiquetaImpresion.setBounds(145, 200, 200, 30);
+        etiquetaImpresion.setFont(new Font("arial",0,15));
+        panel.add(etiquetaImpresion);
     }
     private void jj(){
         RButon1= new JRadioButton ("si");
@@ -143,8 +143,8 @@ public class jose extends JFrame{
         };
         boton.addActionListener(oo);
         }
-private void cBoton1(){
-    boton=new JButton("cambio clave");  
+    private void cBoton1(){
+        boton=new JButton("cambio clave");  
         boton.setBounds(250, 330, 150, 40);
         boton.setFont(new Font("arial",0,15));
         panel.add(boton);
@@ -164,7 +164,7 @@ private void cBoton1(){
             panel.add(boton1);
         };
         boton.addActionListener(oo);
-}
+    }
 
     private void cBoton2(){
         boton=new JButton("mirar sado");  
@@ -173,8 +173,8 @@ private void cBoton1(){
         panel.add(boton);
         
         ActionListener oo=(ActionEvent ae) -> {
-            saludo.setText("su saldo es de "+getSal());
+            saludo.setText("su saldo es de "+getSaldo());
         };
         boton.addActionListener(oo);
     }
-        }
+}
