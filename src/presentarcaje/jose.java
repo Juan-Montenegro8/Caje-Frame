@@ -40,12 +40,12 @@ public class jose extends JFrame{
         ctexusu();
         cEtiquitacontra();
         ctextcontra();
-        cBoton();
-        cBoton1();
-        cEtiqui();
-        jj();
-        jaj();
-        cBoton2();
+        cBotonTransferencia();
+        cBotonCambioClave();
+        cEtiquetaImpresion();
+        rButtonSiNo();
+        jButtonRetiro();
+        cBotonMirarSaldo();
     }
     private void cPanel(){
         panel= new JPanel();
@@ -74,13 +74,13 @@ public class jose extends JFrame{
         pss.setBounds(150, 140, 150, 40);
         panel.add(pss);
         }
-    private void cEtiqui(){
+    private void cEtiquetaImpresion(){
         JLabel etiquetaImpresion=new JLabel("Desea impimir su recibo");
         etiquetaImpresion.setBounds(145, 200, 200, 30);
         etiquetaImpresion.setFont(new Font("arial",0,15));
         panel.add(etiquetaImpresion);
     }
-    private void jj(){
+    private void rButtonSiNo(){
         RButon1= new JRadioButton ("si");
         RButon1.setBounds(150, 220, 40, 40);
         panel.add(RButon1);
@@ -89,7 +89,7 @@ public class jose extends JFrame{
         RButon.setBounds(250, 220, 40, 40);
         panel.add(RButon);
     }
-    private void jaj(){
+    private void jButtonRetiro(){
         boton=new JButton("retiro");  
         boton.setBounds(150, 280, 150, 40);
         boton.setFont(new Font("arial",0,15));
@@ -109,7 +109,7 @@ public class jose extends JFrame{
     }
     
     
-    private void cBoton(){
+    private void cBotonTransferencia(){
         
         boton=new JButton("transferencia");  
         boton.setBounds(80, 330, 150, 40);
@@ -143,7 +143,7 @@ public class jose extends JFrame{
         };
         boton.addActionListener(oo);
         }
-    private void cBoton1(){
+    private void cBotonCambioClave(){
         boton=new JButton("cambio clave");  
         boton.setBounds(250, 330, 150, 40);
         boton.setFont(new Font("arial",0,15));
@@ -166,7 +166,7 @@ public class jose extends JFrame{
         boton.addActionListener(oo);
     }
 
-    private void cBoton2(){
+    private void cBotonMirarSaldo(){
         boton=new JButton("mirar sado");  
         boton.setBounds(150, 380, 150, 40);
         boton.setFont(new Font("arial",0,15));
